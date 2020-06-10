@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*##Colors*/
+/*###Primary*/
+/*### Neutral*/
+/*## Typography*/
+/*### Body*/
+/*### Font*/
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+main {
+  margin: 2rem auto;
+}
+
+.main-text {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0 .5rem;
+  max-width: 500px;
+  text-align: center;
+}
+
+.main-text h2 {
+  color: #a3a5ae;
+  font-weight: 200;
+}
+
+.main-text h1 {
+  color: #4c4e61;
+}
+
+.main-text p {
+  color: #a3a5ae;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "item1 item2 item4" "item1 item3 item4";
+    align-items: center;
+  }
+}
+
+.card {
+  min-width: 250px;
+  max-width: 350px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #4c4e61;
+}
+
+.card p {
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+
+.card .container-icon {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.card > * {
+  margin-bottom: .25rem;
+}
+
+@media screen and (min-width: 1224px) {
+  .card {
+    max-width: initial;
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+.item1 {
+  border-top: 3px solid #45d3d3;
+}
+
+@media screen and (min-width: 1024px) {
+  .item1 {
+    grid-area: item1;
+  }
+}
+
+.item2 {
+  border-top: 3px solid #ea5353;
+}
+
+@media screen and (min-width: 1024px) {
+  .item2 {
+    grid-area: item2;
+  }
+}
+
+.item3 {
+  border-top: 3px solid #fcaf4a;
+}
+
+@media screen and (min-width: 1024px) {
+  .item3 {
+    grid-area: item3;
+  }
+}
+
+.item4 {
+  border-top: 3px solid #549ef2;
+}
+
+@media screen and (min-width: 1024px) {
+  .item4 {
+    grid-area: item4;
+  }
+}
+
+footer {
+  margin: 1rem auto;
+}
+
+footer .attribution {
+  font-size: .8rem;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
+
