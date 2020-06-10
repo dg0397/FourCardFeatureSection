@@ -1,0 +1,18 @@
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: .5rem;
+    @media screen and (min-width: 720px) {
+        grid-template-columns: repeat( 2 , 1fr);
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat( 3 , 1fr);
+        grid-template-areas: 
+        "item1 item2 item4"
+        "item1 item3 item4";
+        align-items: center;    
+    }
+}

@@ -1,0 +1,52 @@
+.card{
+    min-width: 250px;
+    max-width: 350px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    h3{
+        color:$very-dark-blue;
+    }
+    p{
+        font-weight: $font-w-ligth;
+        margin-bottom: 1.5rem;
+    }
+    .container-icon{
+        text-align: right;
+        margin-bottom: 0;
+    }
+    > * {
+        margin-bottom: .25rem;
+    }
+    @media screen and (min-width: 1224px) {
+        max-width: initial;
+        width: 100%;
+        padding: 2rem;
+    }
+}
+.item1{
+    border-top: 3px solid $cyan ;
+    @media screen and (min-width: 1024px) {
+        grid-area: item1; 
+    }
+}
+.item2{
+    border-top: 3px solid $red;
+    @media screen and (min-width: 1024px) {
+        grid-area: item2; 
+    }
+}
+.item3{
+    border-top: 3px solid $orange;
+    @media screen and (min-width: 1024px) {
+        grid-area: item3; 
+    }
+}
+.item4{
+    border-top: 3px solid $blue;
+    @media screen and (min-width: 1024px) {
+        grid-area: item4; 
+    }
+}

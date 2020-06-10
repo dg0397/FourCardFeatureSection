@@ -1,0 +1,17 @@
+.main-text{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0 .5rem;
+    max-width: 500px;
+    text-align: center;
+    h2{
+        color: $grayish-blue;
+        font-weight: $font-w-ligth;
+    }
+    h1{
+        color:$very-dark-blue;
+    }
+    p{
+        color: $grayish-blue;
+    }
+}
